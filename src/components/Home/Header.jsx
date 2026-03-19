@@ -8,7 +8,7 @@ import homeBadge from "../../assets/home-badge.png";
 const Header = () => {
   return (
     <>
-      <div className="container mx-auto px-3 grid lg:grid-cols-2 gap-30 lg:gap-10 items-center py-30">
+      <div className="container mx-auto px-3 grid lg:grid-cols-2 gap-30 lg:gap-10 items-center py-30 overflow-visible">
         <div className="space-y-6 order-2 lg:order-1">
           <h2 className="text-5xl md:text-6xl font-extrabold leading-14 md:leading-18">
             Dive into Delights Of Delectable
@@ -20,17 +20,17 @@ const Header = () => {
             Craftsmanship
           </p>
 
-          <div className="flex flex-wrap md:flex-nowrap gap-5 items-center">
-            <button className="btn bg-green-500 text-xl md:text-2xl font-semibold text-white rounded-full shadow-2xl md:py-7 md:px-10 shadow-green-400">
+          <div className="flex flex-wrap md:flex-nowrap gap-2 items-center">
+            <button className="btn btn-success bg-green-500 text-xl md:text-2xl font-semibold text-white rounded-full shadow-2xl py-8 px-8 shadow-green-400">
               Order Now
             </button>
 
-            <button className="btn flex items-center gap-3 text-xl md:text-2xl font-semibold rounded-full shadow-xl md:px-10 md:py-7">
+            <button className="hover:btn btn-success hover:bg-green-500 hover:text-white text-xl md:text-2xl font-semibold rounded-full px-8 hover:py-8 hover:shadow-2xl hover:shadow-green-400">
               Watch Video
-              <span className="bg-gray-200 shadow-2xl md:p-2 rounded-full flex items-center justify-center">
-                <Play size={30} className="text-black" />
-              </span>
             </button>
+            <span className="bg-base-300 shadow-2xl p-4 shadow-gray-600 rounded-full flex items-center justify-center cursor-pointer">
+              <Play size={30} className="text-black" />
+            </span>
           </div>
         </div>
 
@@ -50,8 +50,8 @@ const Header = () => {
             <img src={homeBadge} alt="Home Badge" />
           </div>
 
-          <div className="absolute -bottom-20 lg:-bottom-16 z-30 flex gap-5">
-            <div className="flex gap-4 p-3 px-4 bg-base-300 rounded-2xl shadow-2xl">
+          <div className="absolute -bottom-20  md:mr-60 xl:mr-0 lg:-bottom-16 z-50 flex gap-2">
+            <div className="flex gap-4 p-3 px-4 bg-base-300 rounded-2xl shadow-2xl shrink-0">
               <img src={homeBatch2} alt="Home Batch 2" className="w-20 h-20" />
               <div>
                 <h2 className="text-xl font-medium">Spicy noodles</h2>
@@ -66,7 +66,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="sm:flex gap-4 hidden p-3 px-4 bg-base-300 rounded-2xl shadow-2xl">
+            <div className="lg:flex gap-4 hidden p-3 px-4 bg-base-300 rounded-2xl shadow-2xl shrink-0">
               <img src={homeBatch1} alt="Home Batch 2" className="w-20 h-20" />
               <div>
                 <h2 className="text-xl font-medium">Spicy noodles</h2>

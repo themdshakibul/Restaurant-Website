@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Cheese Burger",
+    "description": "Juicy grilled beef patty with melted cheese, fresh lettuce, and soft bun.",
+    "image": "../src/assets/catagory-1.avif"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Biryani",
+    "description": "Aromatic basmati rice cooked with spicy chicken and traditional spices.",
+    "image": "../src/assets/catagory-2.avif"
+  },
+  {
+    "id": 3,
+    "title": "Italian Pizza",
+    "description": "Classic pizza topped with mozzarella cheese, tomato sauce, and fresh basil.",
+    "image": "../src/assets/catagory-3.avif"
+  },
+  {
+    "id": 4,
+    "title": "Pasta Alfredo",
+    "description": "Creamy Alfredo pasta with rich cheese sauce and grilled chicken pieces.",
+    "image": "../src/assets/catagory-4.avif"
+  }
+]
