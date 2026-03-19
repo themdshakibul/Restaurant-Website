@@ -1,4 +1,3 @@
-import React from "react";
 import navLogo from "../../assets/nav-logo.png";
 import { Clock, Menu, PhoneCall, ShoppingBag, X } from "lucide-react";
 import { useState } from "react";
@@ -8,9 +7,9 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-base-300 shadow-2xl card-border">
-        <div className="flex items-center justify-between py-5 container mx-auto px-3">
+        <div className="flex items-center justify-between py-4 container mx-auto px-3">
           <div className="flex items-center gap-2">
-            <h2 className="bg-green-500 py-2 px-3 w-fit rounded-md text-xl font-bold ">
+            <h2 className="bg-green-500 py-2 px-3 w-fit text-white rounded-md text-xl font-bold ">
               F
             </h2>
             <img src={navLogo} alt="Nav" />
@@ -94,7 +93,7 @@ const Navbar = () => {
               </div>
             </div>
             <Clock width={36} />
-            <button className="btn btn-success rounded-full text-white">
+            <button className="btn bg-green-500 rounded-full text-white">
               <PhoneCall width={16} />
               Contact
             </button>
