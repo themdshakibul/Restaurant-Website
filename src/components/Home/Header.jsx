@@ -8,7 +8,7 @@ import homeBadge from "../../assets/home-badge.png";
 const Header = () => {
   return (
     <>
-      <div className="container mx-auto px-3 grid lg:grid-cols-2 gap-30 lg:gap-10 items-center py-30 overflow-visible">
+      <div className="container mx-auto px-3 grid lg:grid-cols-2 gap-30 lg:gap-10 items-center py-30 overflow-visible mt-30">
         <div className="space-y-6 order-2 lg:order-1">
           <h2 className="text-5xl md:text-6xl font-extrabold leading-14 md:leading-18">
             Dive into Delights Of Delectable
@@ -46,11 +46,11 @@ const Header = () => {
             alt=""
             className="absolute z-10 mr-6.5 md:mr-9 w-75 md:w-100 lg:w-113"
           />
-          <div className="absolute z-50 -top-2 md:-top-5 mr-55 md:mr-90 lg:mr-95 w-40 md:w-100">
+          <div className="absolute z-20 -top-2 md:-top-5 mr-55 md:mr-90 lg:mr-95 w-40 md:w-100">
             <img src={homeBadge} alt="Home Badge" />
           </div>
 
-          <div className="absolute -bottom-20  md:mr-60 xl:mr-0 lg:-bottom-16 z-50 flex gap-2">
+          <div className="absolute -bottom-20  md:mr-60 xl:mr-0 lg:-bottom-16 z-30 flex gap-2">
             <div className="flex gap-4 p-3 px-4 bg-base-300 rounded-2xl shadow-2xl shrink-0">
               <img src={homeBatch2} alt="Home Batch 2" className="w-20 h-20" />
               <div>

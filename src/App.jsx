@@ -4,8 +4,10 @@ import Header from "./components/Home/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Popular from "./components/PopularSection/Popular";
 import "./tailwind.init.css";
+import FormOurMenu from "./components/StandoutDish/StanDish";
 
 const popularCard = axios.get("PopularCatagories.json");
+const StanOutDish = axios.get("StanDoutDish.json");
 
 function App() {
   return (
@@ -23,6 +25,10 @@ function App() {
           }
         >
           <Popular popularCard={popularCard} />
+        </Suspense>
+
+        <Suspense fallback={<h2>Loading....</h2>}>
+          <FormOurMenu StanOutDish={StanOutDish} />
         </Suspense>
       </main>
     </>
