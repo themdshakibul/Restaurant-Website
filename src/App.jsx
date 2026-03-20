@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Popular from "./components/PopularSection/Popular";
 import "./tailwind.init.css";
 import FormOurMenu from "./components/StandoutDish/StanDish";
+import CustomAboutUs from "./components/CustomAbout/CustomAboutUs";
 
 const popularCard = axios.get("PopularCatagories.json");
 const StanOutDish = axios.get("StanDoutDish.json");
@@ -30,6 +31,8 @@ function App() {
         <Suspense fallback={<h2>Loading....</h2>}>
           <FormOurMenu StanOutDish={StanOutDish} />
         </Suspense>
+
+        <CustomAboutUs />
       </main>
     </>
   );

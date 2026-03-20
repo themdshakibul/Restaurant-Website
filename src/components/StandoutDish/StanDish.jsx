@@ -8,7 +8,7 @@ const FormOurMenu = ({ StanOutDish }) => {
 
   return (
     <>
-      <div className="container mx-auto p-3 mb-50">
+      <div className="container mx-auto p-3 mb-20 md:mb-40">
         <header className="space-y-4 py-10">
           <p className="text-xl font-bold uppercase text-red-500">
             Special Dishes
