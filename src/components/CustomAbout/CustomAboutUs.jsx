@@ -8,7 +8,7 @@ const CustomAboutUs = () => {
   return (
     <>
       <div className="container mx-auto p-3 mb-40">
-        <div className="grid lg:grid-cols-2">
+        <div className="grid lg:grid-cols-2 mb-20">
           <div className="relative">
             <img src={SheapImage} alt="Shape Image" className="z-20 relative" />
             <div>
