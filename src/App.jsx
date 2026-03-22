@@ -7,6 +7,7 @@ import "./tailwind.init.css";
 import FormOurMenu from "./components/StandoutDish/StanDish";
 import CustomAboutUs from "./components/CustomAbout/CustomAboutUs";
 import Services from "./components/ServiecsSection/Services";
+import Footer from "./components/Footer/Footer";
 
 const popularCard = axios.get("PopularCatagories.json");
 const StanOutDish = axios.get("StanDoutDish.json");
@@ -35,6 +36,7 @@ function App() {
 
         <CustomAboutUs />
         <Services />
+        <Footer />
       </main>
     </>
   );
