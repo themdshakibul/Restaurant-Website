@@ -1,3 +1,4 @@
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import navLogo from "../../assets/nav-logo.png";
 
 const Footer = () => {
@@ -92,6 +93,41 @@ const Footer = () => {
             </a>
           </nav>
         </footer>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 pb-10 items-center">
+          <div className="flex gap-5 items-center">
+            <a href="#">
+              <Facebook
+                size={50}
+                color="black"
+                className="bg-green-500 rounded-full p-2 shadow-2xl"
+              />
+            </a>
+            <a href="#">
+              <Instagram
+                size={50}
+                color="black"
+                className="bg-green-50 rounded-full shadow-2xl p-2 hover:bg-green-500"
+              />
+            </a>
+            <a href="#">
+              <Twitter
+                size={50}
+                color="black"
+                className="bg-green-50 rounded-full shadow-2xl p-2 hover:bg-green-500"
+              />
+            </a>
+            <a href="#">
+              <Youtube
+                size={50}
+                color="black"
+                className="bg-green-50 rounded-full shadow-2xl p-2 hover:bg-green-500"
+              />
+            </a>
+          </div>
+          <p className="text-xl font-semibold">
+            Copyright 2026 Dscode | All rights reserved
+          </p>
+        </div>
       </div>
     </>
   );
