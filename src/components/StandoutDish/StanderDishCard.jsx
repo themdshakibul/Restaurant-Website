@@ -1,11 +1,18 @@
 import { Heart } from "lucide-react";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const StanderDishCard = ({ itemData }) => {
   const { image, title, description, price, rating } = itemData;
-  console.log(itemData);
 
   const [click, setClick] = useState(false);
+  const [visited, setVisited] = useState(false);
+
+  const handelvisited = () => {
+    // setVisited(visited ? false : true);
+    setVisited(!visited);
+    toast.success("Card Add Successfull!");
+  };
 
   return (
     <>
@@ -27,6 +34,13 @@ const StanderDishCard = ({ itemData }) => {
               ⭐⭐⭐ {rating}
             </span>
           </div>
+          <button
+            onClick={handelvisited}
+            className="btn btn-success bg-green-500 text-white mt-5"
+          >
+            {visited ? "Card Added" : "Add to Card"}
+          </button>
+
           <div className="absolute top-0 right-0">
             <h2
               onClick={() => setClick(!click)}

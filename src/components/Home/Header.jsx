@@ -75,7 +75,7 @@ const Header = () => {
                   <Star size={16} />
                 </span>
                 <p className="font-semibold ">
-                  <span className="text-red-500 text-sm">$</span>$23.00
+                  <span className="text-red-500 text-sm">$</span>23.00
                 </p>
               </div>
             </div>

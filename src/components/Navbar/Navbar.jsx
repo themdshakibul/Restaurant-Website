@@ -9,7 +9,11 @@ const Navbar = () => {
       <div className="fixed top-0 left-0 w-full z-50 bg-base-300 shadow-2xl">
         <div className="flex items-center justify-between py-4 container mx-auto px-3">
           <div className="flex items-center gap-2">
-            <h2 className="bg-green-500 py-2 px-3 w-fit text-white rounded-md text-xl font-bold ">
+            <h2
+              data-aos="fade-down"
+              data-aos-once="false"
+              className="bg-green-500 py-2 px-3 w-fit text-white rounded-md text-xl font-bold "
+            >
               F
             </h2>
             <img src={navLogo} alt="Nav" />
