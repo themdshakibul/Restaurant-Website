@@ -1,12 +1,10 @@
 import { Suspense } from "react";
 import axios from "axios";
 import Header from "../components/Home/Header";
-import Navbar from "../components/Navbar/Navbar";
 import Popular from "../components/PopularSection/Popular";
 import FormOurMenu from "../components/StandoutDish/StanDish";
 import CustomAboutUs from "../components/CustomAbout/CustomAboutUs";
 import Services from "../components/ServiecsSection/Services";
-import Footer from "../components/Footer/Footer";
 
 const popularCard = axios.get("PopularCatagories.json");
 const StanOutDish = axios.get("StanDoutDish.json");
@@ -15,9 +13,6 @@ const Home = () => {
   return (
     <>
       <div>
-        <nav>
-          <Navbar />
-        </nav>
         <main>
           <Header />
           <Suspense
@@ -36,7 +31,7 @@ const Home = () => {
 
           <CustomAboutUs />
           <Services />
-          <Footer />
+          
         </main>
       </div>
     </>
