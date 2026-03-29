@@ -1,6 +1,6 @@
 import { Heart } from "lucide-react";
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 const StanderDishCard = ({ itemData }) => {
   const { image, title, description, price, rating } = itemData;

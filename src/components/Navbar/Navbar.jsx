@@ -2,6 +2,35 @@ import navLogo from "../../assets/nav-logo.png";
 import { Clock, Menu, PhoneCall, ShoppingBag, X } from "lucide-react";
 import { useState } from "react";
 
+const navbarData = [
+  {
+    id: 1,
+    name: "Home",
+    path: "/",
+  },
+  {
+    id: 2,
+    name: "Menu",
+    path: "/menu",
+  },
+  {
+    id: 3,
+    name: "Services",
+    path: "/services",
+  },
+  {
+    id: 4,
+    name: "Offer",
+    path: "/offer",
+  },
+];
+
+const navLink = navbarData.map((route) => (
+  <li key={route.id}>
+    <a href={route.path}>{route.name}</a>
+  </li>
+));
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -19,20 +48,7 @@ const Navbar = () => {
             <img src={navLogo} alt="Nav" />
           </div>
           <div className="hidden lg:flex">
-            <ul className="flex items-center gap-5">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Menu</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Offers</a>
-              </li>
-            </ul>
+            <ul className="flex items-center gap-5">{navLink}</ul>
           </div>
           <div onClick={() => setOpen(!open)} className="lg:hidden relative">
             {open ? <X /> : <Menu />}
@@ -40,18 +56,7 @@ const Navbar = () => {
             <ul
               className={`absolute right-0 top-12 flex flex-col items-center gap-3 p-5 w-40 bg-white shadow-2xl rounded-xl z-40 transform transition-all duration-300 ease-in-out ${open ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5 pointer-events-none"}`}
             >
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Menu</a>
-              </li>
-              <li>
-                <a href="#">Services</a>
-              </li>
-              <li>
-                <a href="#">Offers</a>
-              </li>
+              {navLink}
             </ul>
           </div>
           <div className="hidden lg:flex items-center gap-5">
