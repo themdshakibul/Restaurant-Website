@@ -6,6 +6,7 @@ import Offer from "./pages/Offer";
 import Services from "./pages/Services";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Offer" element={<Offer />} />
       </Routes>
       <Footer />
+      <ToastContainer />
     </>
   );
 }
